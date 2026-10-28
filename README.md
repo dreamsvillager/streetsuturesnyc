@@ -4,7 +4,7 @@ I've been seeking an alternative to WordPress.com for a while. This one might be
 
 ## Current status
 
-In short, I just got started. Cloned from a template very recently.
+In short, I just got started. Cloned from a template very recently. You will still find explainers and filler content that came with the template as I haven't changed any of it myself yet except for this README.
 
 ## Credits
 
