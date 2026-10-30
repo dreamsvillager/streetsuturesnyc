@@ -2,13 +2,16 @@
 title: Contact
 description: Contact me.
 noIndex: false
-hideTOC: false
+hideTOC: true
 draft: false
 aliases:
   - contact-me
   - contact-us
 ---
-Send me a message. 
+I’d like to hear from you! Simply send your message in the form below.
+
+- Please give me a day or two to get back to you.
+- Anything I deem suspicious, spammy, or scornful will be ignored.
 
 <!--
   This form works natively with Netlify Forms. Deploy to Netlify and it is

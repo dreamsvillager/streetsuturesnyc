@@ -1,7 +1,7 @@
 {
   "runWizardOnStartup": true,
   "currentTemplate": "standard",
-  "currentTheme": "macos",
+  "currentTheme": "flexoki",
   "customThemeFile": "custom",
   "contentOrganization": "folder-based",
   "themeColors": {
@@ -45,7 +45,7 @@
     "description": "Crayoning my way towards a more humane NYC.",
     "author": "Samuel Santaella",
     "language": "en",
-    "faviconThemeAdaptive": true,
+    "faviconThemeAdaptive": false,
     "defaultOgImageAlt": "Astro Modular logo."
   },
   "layout": {
@@ -85,14 +85,18 @@
         "url": "/about/",
         "children": [
           {
+            "title": "Contact",
+            "url": "/contact/"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/dreamsvillager/streetsuturesnyc"
+          },
+          {
             "title": "Privacy Policy",
             "url": "/privacy-policy/"
           }
         ]
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com/dreamsvillager/streetsuturesnyc"
       }
     ],
     "social": [
@@ -134,9 +138,9 @@
     "placeholder": "Search posts",
     "search": {
       "posts": true,
-      "pages": false,
-      "projects": false,
-      "docs": false
+      "pages": true,
+      "projects": true,
+      "docs": true
     },
     "sections": {
       "quickActions": true,
@@ -169,7 +173,7 @@
       "count": 3
     },
     "blurb": {
-      "placement": "below"
+      "placement": "above"
     }
   },
   "postOptions": {
@@ -234,7 +238,7 @@
   },
   "typography": {
     "headingFont": "Inter",
-    "proseFont": "Open Sans",
+    "proseFont": "Inter",
     "monoFont": "Source Code Pro",
     "fontSource": "local",
     "fontDisplay": "swap",
