@@ -1,10 +1,10 @@
 {
-  "cssTheme": "Oxygen",
+  "cssTheme": "Swak",
   "showViewHeader": true,
   "showRibbon": false,
   "enabledCssSnippets": [
     "astro-modular-styling"
   ],
   "theme": "system",
-  "accentColor": ""
+  "accentColor": "#00a321"
 }

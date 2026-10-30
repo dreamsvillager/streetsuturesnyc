@@ -7,9 +7,37 @@
   "themeColors": {
     "mode": "simple",
     "simpleColors": {
-      "accent": "#5865f2",
-      "background": "#1e1e1e"
-    }
+      "accent": "#8a5cf5",
+      "background": "#ffffff"
+    },
+    "extractedColors": {
+      "primary": {
+        "50": "#0d0d0d",
+        "100": "#191919",
+        "200": "#333333",
+        "300": "#4d4d4d",
+        "400": "#737373",
+        "500": "#999999",
+        "600": "#bfbfbf",
+        "700": "#ffffff",
+        "800": "#ffffff",
+        "900": "#ffffff",
+        "950": "#ffffff"
+      },
+      "highlight": {
+        "50": "#a68af9",
+        "100": "#a68af9",
+        "200": "#a68af9",
+        "300": "#8a5cf5",
+        "400": "#8a5cf5",
+        "500": "#8a5cf5",
+        "600": "#8a5cf5",
+        "700": "#8a5cf5",
+        "800": "#8a5cf5",
+        "900": "#8a5cf5"
+      }
+    },
+    "lastExtracted": "2026-10-30T05:25:08.445Z"
   },
   "siteInfo": {
     "site": "https://streetsuturesnyc.netlify.app",
@@ -205,7 +233,7 @@
     }
   },
   "typography": {
-    "headingFont": "Merriweather",
+    "headingFont": "Inter",
     "proseFont": "Open Sans",
     "monoFont": "Source Code Pro",
     "fontSource": "local",

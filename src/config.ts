@@ -214,7 +214,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:FONT_BODY]
       body: "Open Sans",      // Body text font family
       // [CONFIG:FONT_HEADING]
-      heading: "Merriweather",   // Heading font family  
+      heading: "Inter",   // Heading font family  
       // [CONFIG:FONT_MONO]
       mono: "Source Code Pro", // Monospace font family
     },
