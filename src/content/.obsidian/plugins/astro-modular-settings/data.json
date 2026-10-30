@@ -1,14 +1,14 @@
 {
   "runWizardOnStartup": true,
   "currentTemplate": "standard",
-  "currentTheme": "custom",
+  "currentTheme": "macos",
   "customThemeFile": "Material Design Green",
   "contentOrganization": "folder-based",
   "themeColors": {
     "mode": "simple",
     "simpleColors": {
       "accent": "#00a321",
-      "background": "#f5f5f5"
+      "background": "#f7f7f7"
     },
     "extractedColors": {
       "primary": {
@@ -151,7 +151,7 @@
       "enabled": true,
       "toggleMode": true,
       "graphView": true,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "homeOptions": {
@@ -179,7 +179,7 @@
   "postOptions": {
     "postsPerPage": 6,
     "readingTime": true,
-    "wordCount": true,
+    "wordCount": false,
     "tags": true,
     "linkedMentions": {
       "enabled": true,
@@ -233,13 +233,13 @@
       "enabled": true,
       "toggleMode": true,
       "graphView": true,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "typography": {
     "headingFont": "Inter",
     "proseFont": "Inter",
-    "monoFont": "Source Code Pro",
+    "monoFont": "Cascadia Code",
     "fontSource": "local",
     "fontDisplay": "swap",
     "customFonts": {
@@ -300,7 +300,7 @@
   },
   "availableThemes": "default",
   "customThemes": "",
-  "customThemeGenerationEnabled": true,
+  "customThemeGenerationEnabled": false,
   "removeRibbonIcon": false,
   "defaultTemplate": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ntags: []\n---\n",
   "autoInsertProperties": true,

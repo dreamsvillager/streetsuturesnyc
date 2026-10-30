@@ -202,9 +202,9 @@ export const siteConfig: SiteConfig = {
 
   // Global Settings
   // [CONFIG:THEME]
-  theme: "custom", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
+  theme: "macos", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
   // [CONFIG:CUSTOM_THEME_FILE]
-  customThemeFile: "custom", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
+  customThemeFile: "Material Design Green", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
   // [CONFIG:AVAILABLE_THEMES]
   availableThemes: "default", // "default" to show all built-in themes, or array of theme names like ["oxygen", "minimal", "obsidianite"] to limit choices (can include custom theme filenames)
   fonts: {
@@ -216,7 +216,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:FONT_HEADING]
       heading: "Inter",   // Heading font family  
       // [CONFIG:FONT_MONO]
-      mono: "Source Code Pro", // Monospace font family
+      mono: "Cascadia Code", // Monospace font family
     },
     // [CONFIG:FONT_DISPLAY]
     display: "swap", // Font display strategy: "swap" (recommended), "fallback", or "optional"
@@ -286,7 +286,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
       graphView: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
-      changeTheme: true,
+      changeTheme: false,
     },
   },
 
@@ -412,7 +412,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_READING_TIME]
     readingTime: true,
     // [CONFIG:POST_OPTIONS_WORD_COUNT]
-    wordCount: true,
+    wordCount: false,
     // [CONFIG:POST_OPTIONS_TAGS]
     tags: true,
     linkedMentions: {
