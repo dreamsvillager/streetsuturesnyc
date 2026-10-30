@@ -1,36 +1,30 @@
-// Custom Theme Template
-// Rename this file to custom-theme.ts (or any name you prefer)
-// Then set theme: "custom" in src/config.ts - it will work automatically!
+// Custom theme extracted from Obsidian
+// Generated: 2026-10-30T06:58:53.993Z
 
 export const customTheme = {
   primary: {
-    50: "#ffffff",   // Pure white
-    100: "#f8f8f8",
-    200: "#e8e8e8",
-    300: "#d0d0d0",
-    400: "#a0a0a0",
-    500: "#808080",  // Base gray
-    600: "#606060",
-    700: "#404040",
-    800: "#202020",
-    900: "#101010",
-    950: "#000000"   // Pure black
+    50: "#0c0c0c",
+    100: "#181818",
+    200: "#313131",
+    300: "#4a4a4a",
+    400: "#6e6e6e",
+    500: "#939393",
+    600: "#b8b8b8",
+    700: "#f5f5f5",
+    800: "#f7f7f7",
+    900: "#f9f9f9",
+    950: "#fafafa"
   },
   highlight: {
-    50: "#f0f8ff",   // Very light blue
-    100: "#e0f2fe",
-    200: "#bae6fd",
-    300: "#7dd3fc",
-    400: "#38bdf8",
-    500: "#0ea5e9",  // Base light blue
-    600: "#0284c7",
-    700: "#0369a1",
-    800: "#075985",
-    900: "#0c4a6e",
-    950: "#082f49"
+    50: "#007a18",
+    100: "#007a18",
+    200: "#007a18",
+    300: "#00a321",
+    400: "#00a321",
+    500: "#00a321",
+    600: "#00a321",
+    700: "#00a321",
+    800: "#00a321",
+    900: "#00a321"
   }
 };
-
-// Usage in src/config.ts:
-// theme: "custom",
-// customTheme: customTheme

@@ -1,8 +1,8 @@
 {
   "lightStyle": "oxygen-light",
   "darkStyle": "oxygen-dark",
-  "lightScheme": "oxygen-oxygen-light",
-  "darkScheme": "oxygen-oxygen-dark",
+  "lightScheme": "oxygen-custom-material-design-green",
+  "darkScheme": "oxygen-custom-material-design-green",
   "editorFont": "",
   "lineHeight": 1.5,
   "lineWidth": 40,
@@ -16,14 +16,14 @@
   "iframeWidth": "iframe-default-width",
   "mapWidth": "map-default-width",
   "chartWidth": "chart-default-width",
-  "colorfulHeadings": false,
+  "colorfulHeadings": true,
   "colorfulFrame": false,
-  "colorfulActiveStates": false,
-  "trimNames": true,
-  "labeledNav": false,
+  "colorfulActiveStates": true,
+  "trimNames": false,
+  "labeledNav": true,
   "fullWidthMedia": true,
   "workspaceBorders": "enhanced",
-  "minimalStatus": true,
+  "minimalStatus": false,
   "underlineInternal": true,
   "underlineExternal": true,
   "folding": true,
@@ -71,12 +71,44 @@
         },
         "frameLightnessOffset": -5
       }
+    },
+    {
+      "id": "material-design-green",
+      "name": "Material Design Green",
+      "author": "Samuel Santaella",
+      "version": "1.0.0",
+      "light": {
+        "base": {
+          "h": 210,
+          "s": 2,
+          "l": 96
+        },
+        "accent": {
+          "h": 123,
+          "s": 46,
+          "l": 34
+        },
+        "colors": {}
+      },
+      "dark": {
+        "base": {
+          "h": 210,
+          "s": 2,
+          "l": 13
+        },
+        "accent": {
+          "h": 123,
+          "s": 46,
+          "l": 34
+        },
+        "colors": {}
+      }
     }
   ],
   "enableCustomPresets": true,
   "navIndentationGuideWidth": "0px",
   "navIndentationGuideColor": "rgba(var(--mono-rgb-100), 0.12)",
-  "animationPersonality": "playful",
+  "animationPersonality": "off",
   "animationSpeed": 0.7,
   "enableBlur": false,
   "useDefaultFolderIcon": false,
