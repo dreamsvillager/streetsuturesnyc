@@ -1,5 +1,5 @@
 {
-  "scanDirectories": "posts",
+  "scanDirectories": "docs,pages,posts,projects,special",
   "ignoreUnderscoreFiles": false,
   "enableMDXSupport": false,
   "keywordProperty": "targetKeyword",

@@ -1,8 +1,9 @@
+defaultView: Posts
 filters:
   and:
     - file.ext == "md"
 formulas:
-  Slug: |
+  Slug: |-
     (
       if(file.folder == "posts", "/posts/" + file.name.replace(".md", ""), 
         if(file.folder == "projects", "/projects/" + file.name.replace(".md", ""), 
@@ -27,16 +28,28 @@ formulas:
       )
     )
 properties:
-  note.title:
-    displayName: Title
-  note.date:
-    displayName: Date
-  note.pubDate:
-    displayName: Date
+  file.fullname:
+    displayName: Full File Name
+  file.name:
+    displayName: Name
   formula.Slug:
     displayName: Path
+  note.date:
+    displayName: Date
+  note.description:
+    displayName: Description
   note.draft:
     displayName: Draft
+  note.image:
+    displayName: Image
+  note.lastModified:
+    displayName: LastModified
+  note.pubDate:
+    displayName: Date
+  note.tags:
+    displayName: Tags
+  note.title:
+    displayName: Title
 views:
   - type: cms
     name: Posts
@@ -74,6 +87,39 @@ views:
     showScheduledBadge: true
     richContentPreview: false
     descriptionMaxLines: 5
+  - type: cms
+    name: Documentation
+    filters:
+      and:
+        - file.folder.startsWith("docs")
+    groupBy:
+      property: category
+      direction: ASC
+    sort:
+      - property: order
+        direction: ASC
+    imageProperty: note.image
+    fallbackToEmbeds: true
+    propertyDisplay1: formula.Slug
+    showTextPreview: true
+    imageFormat: cover
+    showDate: true
+    showDraftStatus: true
+    propertyLabels: above
+    titleProperty: note.title
+    dateProperty: note.lastModified
+    draftStatusProperty: note.draft
+    descriptionProperty: note.description
+    propertyLayout12SideBySide: false
+    propertyLayout34SideBySide: false
+    showTags: false
+    tagsProperty: note.tags
+    customizeNewButton: true
+    newNoteLocation: docs
+    cardSize: 250
+    imageAspectRatio: 0.55
+    maxTagsToShow: 2
+    propertyDisplay2: note.version
   - type: cms
     name: Pages
     filters:
@@ -132,39 +178,6 @@ views:
     cardSize: 250
     imageAspectRatio: 0.55
     maxTagsToShow: 2
-  - type: cms
-    name: Documentation
-    filters:
-      and:
-        - file.folder.startsWith("docs")
-    groupBy:
-      property: category
-      direction: ASC
-    sort:
-      - property: order
-        direction: ASC
-    imageProperty: note.image
-    fallbackToEmbeds: true
-    propertyDisplay1: formula.Slug
-    showTextPreview: true
-    imageFormat: cover
-    showDate: true
-    showDraftStatus: true
-    propertyLabels: above
-    titleProperty: note.title
-    dateProperty: note.lastModified
-    draftStatusProperty: note.draft
-    descriptionProperty: note.description
-    propertyLayout12SideBySide: false
-    propertyLayout34SideBySide: false
-    showTags: false
-    tagsProperty: note.tags
-    customizeNewButton: true
-    newNoteLocation: docs
-    cardSize: 250
-    imageAspectRatio: 0.55
-    maxTagsToShow: 2
-    propertyDisplay2: note.version
   - type: cms
     name: Special Pages
     filters:

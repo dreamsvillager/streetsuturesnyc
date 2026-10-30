@@ -184,15 +184,15 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://streetsuturesnyc.netlify.app",
   // [CONFIG:SITE_TITLE]
-  title: "Astro Modular",
+  title: "Sam's Street Sutures",
   // [CONFIG:HOMEPAGE_TITLE]
   homepageTitle: "",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "A flexible blog theme designed for Obsidian users.",
+  description: "Crayoning my way towards a more humane NYC.",
   // [CONFIG:SITE_AUTHOR]
-  author: "David V. Kimball",
+  author: "Samuel Santaella",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
@@ -202,7 +202,7 @@ export const siteConfig: SiteConfig = {
 
   // Global Settings
   // [CONFIG:THEME]
-  theme: "oxygen", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
+  theme: "macos", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
   // [CONFIG:CUSTOM_THEME_FILE]
   customThemeFile: "custom", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
   // [CONFIG:AVAILABLE_THEMES]
@@ -212,11 +212,11 @@ export const siteConfig: SiteConfig = {
     source: "local", // "local" for self-hosted @fontsource fonts, "cdn" for Google Fonts CDN
     families: {
       // [CONFIG:FONT_BODY]
-      body: "Inter",      // Body text font family
+      body: "Open Sans",      // Body text font family
       // [CONFIG:FONT_HEADING]
-      heading: "Inter",   // Heading font family  
+      heading: "Merriweather",   // Heading font family  
       // [CONFIG:FONT_MONO]
-      mono: "JetBrains Mono", // Monospace font family
+      mono: "Source Code Pro", // Monospace font family
     },
     // [CONFIG:FONT_DISPLAY]
     display: "swap", // Font display strategy: "swap" (recommended), "fallback", or "optional"
@@ -293,17 +293,17 @@ export const siteConfig: SiteConfig = {
   // Profile Picture
   profilePicture: {
     // [CONFIG:PROFILE_PICTURE_ENABLED]
-    enabled: false, 
+    enabled: true, 
     // [CONFIG:PROFILE_PICTURE_IMAGE]
     image: "/profile.jpg", // Path to your profile image (place in public/ directory)
     // [CONFIG:PROFILE_PICTURE_ALT]
     alt: "Profile picture",
     // [CONFIG:PROFILE_PICTURE_SIZE]
-    size: "md", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
+    size: "lg", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
     // [CONFIG:PROFILE_PICTURE_URL]
     url: "", // Optional
     // [CONFIG:PROFILE_PICTURE_PLACEMENT]
-    placement: "footer", // "footer" or "header"
+    placement: "header", // "footer" or "header"
     // [CONFIG:PROFILE_PICTURE_STYLE]
     style: "circle", // "circle", "square", or "none"
   },
@@ -325,19 +325,39 @@ export const siteConfig: SiteConfig = {
         children: [
           { title: "Privacy Policy", url: "/privacy-policy/" }
         ] },
-      { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" }
+      { title: "GitHub", url: "https://github.com/dreamsvillager/streetsuturesnyc" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
+        title: "Bluesky",
+        url: "https://bsky.app/profile/samuelsantaella.bsky.social",
+        icon: "bluesky",
+      },
+      {
+        title: "YouTube",
+        url: "https://www.youtube.com/channel/UCddz1PK75Ul00Eisfz4n6Yg",
+        icon: "youtube",
+      },
+      {
+        title: "Reddit",
+        url: "https://www.reddit.com/user/DreamsVillager",
+        icon: "reddit",
       },
       {
         title: "GitHub",
-        url: "https://github.com/davidvkimball",
+        url: "https://github.com/dreamsvillager",
         icon: "github",
+      },
+      {
+        title: "Mastodon",
+        url: "https://masto.nyc/@samuelsantaella",
+        icon: "mastodon",
+      },
+      {
+        title: "Goodreads",
+        url: "https://www.goodreads.com/user/show/43430438-samuel",
+        icon: "goodreads",
       },
     ],
   },

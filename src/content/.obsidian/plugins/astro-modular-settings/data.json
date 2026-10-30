@@ -1,9 +1,9 @@
 {
   "runWizardOnStartup": true,
   "currentTemplate": "standard",
-  "currentTheme": "oxygen",
+  "currentTheme": "macos",
   "customThemeFile": "custom",
-  "contentOrganization": "file-based",
+  "contentOrganization": "folder-based",
   "themeColors": {
     "mode": "simple",
     "simpleColors": {
@@ -12,10 +12,10 @@
     }
   },
   "siteInfo": {
-    "site": "https://astro-modular.netlify.app",
-    "title": "Astro Modular",
-    "description": "A flexible blog theme designed for Obsidian users.",
-    "author": "David V. Kimball",
+    "site": "https://streetsuturesnyc.netlify.app",
+    "title": "Sam's Street Sutures",
+    "description": "Crayoning my way towards a more humane NYC.",
+    "author": "Samuel Santaella",
     "language": "en",
     "faviconThemeAdaptive": true,
     "defaultOgImageAlt": "Astro Modular logo."
@@ -64,19 +64,39 @@
       },
       {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball/astro-modular"
+        "url": "https://github.com/dreamsvillager/streetsuturesnyc"
       }
     ],
     "social": [
       {
-        "title": "X",
-        "url": "https://x.com/davidvkimball",
-        "icon": "x-twitter"
+        "title": "Bluesky",
+        "url": "https://bsky.app/profile/samuelsantaella.bsky.social",
+        "icon": "bluesky"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCddz1PK75Ul00Eisfz4n6Yg",
+        "icon": "youtube"
+      },
+      {
+        "title": "Reddit",
+        "url": "https://www.reddit.com/user/DreamsVillager",
+        "icon": "reddit"
       },
       {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball",
+        "url": "https://github.com/dreamsvillager",
         "icon": "github"
+      },
+      {
+        "title": "Mastodon",
+        "url": "https://masto.nyc/@samuelsantaella",
+        "icon": "mastodon"
+      },
+      {
+        "title": "Goodreads",
+        "url": "https://www.goodreads.com/user/show/43430438-samuel",
+        "icon": "goodreads"
       }
     ]
   },
@@ -171,7 +191,7 @@
     "hideScrollBar": false,
     "scrollToTop": true,
     "showSocialIconsInFooter": true,
-    "profilePicture": false,
+    "profilePicture": true,
     "comments": false,
     "featureButton": "mode",
     "showPostCardCoverImages": "featured-and-posts",
@@ -185,9 +205,9 @@
     }
   },
   "typography": {
-    "headingFont": "Inter",
-    "proseFont": "Inter",
-    "monoFont": "JetBrains Mono",
+    "headingFont": "Merriweather",
+    "proseFont": "Open Sans",
+    "monoFont": "Source Code Pro",
     "fontSource": "local",
     "fontDisplay": "swap",
     "customFonts": {
@@ -199,12 +219,12 @@
   },
   "optionalFeatures": {
     "profilePicture": {
-      "enabled": false,
+      "enabled": true,
       "image": "/profile.jpg",
       "alt": "Profile picture",
-      "size": "md",
+      "size": "lg",
       "url": "",
-      "placement": "footer",
+      "placement": "header",
       "style": "circle"
     },
     "comments": {

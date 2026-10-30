@@ -24,7 +24,7 @@
       "id": "posts-1765432337485",
       "name": "Posts",
       "folder": "posts",
-      "fileOrganization": "file",
+      "fileOrganization": "folder",
       "indexFileName": "index",
       "linkBasePath": "/posts/",
       "enabled": true
@@ -33,7 +33,7 @@
       "id": "content-1765432392567",
       "name": "Projects",
       "folder": "projects",
-      "fileOrganization": "file",
+      "fileOrganization": "folder",
       "indexFileName": "index",
       "linkBasePath": "/projects/",
       "enabled": true
@@ -57,7 +57,7 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nlastModified: {{date}}\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: true\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n"
     },
     "pages-1765432337485": {
       "titleProperty": "title",
@@ -65,7 +65,7 @@
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: true\naliases: []\n---\n"
     },
     "posts-1765432337485": {
       "titleProperty": "title",
@@ -76,7 +76,7 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: true\naliases: []\n---\n"
     },
     "content-1765432392567": {
       "titleProperty": "title",
@@ -86,13 +86,13 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ndate: {{date}}\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n"
     },
     "content-type-1769839757487-w482ctdm8": {
       "titleProperty": "title",
       "descriptionProperty": "description",
       "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nhideTOC: false\n---\n"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -115,7 +115,10 @@
     "iconic",
     "settings-search",
     "tag-wrangler",
-    "zenmode"
+    "zenmode",
+    "file-name-history",
+    "omnisearch",
+    "vault-nickname"
   ],
   "disabledPlugins": [],
   "theme": "",
@@ -123,19 +126,82 @@
     "views": []
   },
   "astroComposerConfig": {
-    "customContentTypes": [],
-    "defaultTemplate": "",
-    "configFilePath": "",
-    "terminalProjectRootPath": ""
+    "customContentTypes": [
+      {
+        "id": "posts-1765432337485",
+        "name": "Posts",
+        "folder": "posts",
+        "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: true\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/posts/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-1765432406133",
+        "name": "Documentation",
+        "folder": "docs",
+        "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/docs/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "pages-1765432337485",
+        "name": "Pages",
+        "folder": "pages",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: true\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-1765432392567",
+        "name": "Projects",
+        "folder": "projects",
+        "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/projects/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1769839757487-w482ctdm8",
+        "name": "Special Pages",
+        "folder": "special",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nhideTOC: false\n---\n",
+        "enabled": true,
+        "linkBasePath": "/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      }
+    ],
+    "defaultTemplate": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: true\naliases: []\n---\n",
+    "configFilePath": "../config.ts",
+    "terminalProjectRootPath": "../..",
+    "showMdxFilesInExplorer": false,
+    "postsFolder": "posts",
+    "postsCreationMode": "folder",
+    "postsIndexFileName": "index",
+    "syncDraftDate": true,
+    "draftDetectionMode": "property",
+    "draftProperty": "draft",
+    "draftLogic": "true-is-draft",
+    "publishDateField": "date"
   },
   "seoConfig": {
     "titleProperty": "title",
+    "descriptionProperty": "description",
     "scanDirectories": "docs,pages,posts,projects,special",
     "useFilenameAsTitle": false,
-    "useFilenameAsSlug": true
+    "useFilenameAsSlug": true,
+    "enableMDXSupport": false
   },
   "propertyOverFileName": {
-    "propertyKey": "title"
+    "propertyKey": "title",
+    "enableMdxSupport": false
   },
   "imageManager": {
     "enableRenameOnPaste": true,
@@ -285,7 +351,12 @@
     "openWhenEmpty": false,
     "stickyIconReplaceTab": false
   },
-  "explorerFocus": {},
+  "explorerFocus": {
+    "showRightClickMenu": true,
+    "showFileExplorerIcon": true,
+    "focusLevel": "parent",
+    "hideAncestorFolders": false
+  },
   "ignoreConfig": {
     "gitIgnoreConfigured": true,
     "viteIgnoreConfigured": true
@@ -294,8 +365,11 @@
     "enabled": false,
     "isPrivate": true,
     "branchName": "main",
-    "autoConfigureObsidianGit": true
+    "autoConfigureObsidianGit": true,
+    "repoName": "streetsuturesnyc"
   },
+  "deploymentPlatform": "netlify",
+  "resolvePublicImages": false,
   "runWizardOnStartup": false,
   "wizardCompleted": true,
   "enableMdxSupport": false,

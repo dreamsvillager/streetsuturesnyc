@@ -7,8 +7,6 @@
   "enableForDragDrop": true,
   "useSimpleSearch": false,
   "enableForGraphView": true,
-  "enableForBacklinks": true,
-  "hideUnlinkedMentionsInBacklinks": false,
   "enableForTabs": true,
   "enableForExplorer": false,
   "folderNoteFilename": "index",
@@ -18,5 +16,8 @@
   "enableMdxSupport": false,
   "quickSwitcherExcludedBehavior": "deemphasize",
   "linkSuggesterExcludedBehavior": "deemphasize",
+  "hideUnresolvedLinks": false,
+  "enableForBacklinks": true,
+  "hideUnlinkedMentionsInBacklinks": false,
   "includeFolderNameInSearch": true
 }
